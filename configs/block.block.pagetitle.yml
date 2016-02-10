@@ -1,0 +1,27 @@
+uuid: 429c272e-cc3c-47ce-bb01-1c3b8c6360e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.articles
+  module:
+    - block_visibility_groups
+  theme:
+    - bartik
+id: pagetitle
+theme: bartik
+region: highlighted
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: articles
+    context_mapping: {  }
